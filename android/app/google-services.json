@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "497229873114",
+    "project_id": "doctor-rent",
+    "storage_bucket": "doctor-rent.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:497229873114:android:ef2e557a8d1df391cdcae3",
+        "android_client_info": {
+          "package_name": "com.example.doctors"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "497229873114-lrd3e04unb58et8ue599ahn4bm1t4md5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKSpD9bCeYyeInJXP8HQ-Uo8BJ635b378"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "497229873114-lrd3e04unb58et8ue599ahn4bm1t4md5.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "497229873114-ftq1mg7o7cv498ocofrfbnuqsjm91tcf.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.doctors"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
