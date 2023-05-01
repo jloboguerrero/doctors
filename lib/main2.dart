@@ -211,7 +211,6 @@ class _MyHomePageState extends State<MyHomePage> {
           //   .update({'rent': 3})
           //   .then((value) => print("User Updated"))
           //   .catchError((error) => print("Failed to update user: $error"));
-
         },
         tooltip: 'Increment',
         child: const Icon(Icons.add),
@@ -233,7 +232,6 @@ class GetUserName extends StatelessWidget {
       future: users.doc(company).get(),
       builder:
           (BuildContext context, AsyncSnapshot<DocumentSnapshot> snapshot) {
-
         if (snapshot.hasError) {
           return Text("Something went wrong");
         }
@@ -243,7 +241,8 @@ class GetUserName extends StatelessWidget {
         }
 
         if (snapshot.connectionState == ConnectionState.done) {
-          Map<String, dynamic> data = snapshot.data!.data() as Map<String, dynamic>;
+          Map<String, dynamic> data =
+              snapshot.data!.data() as Map<String, dynamic>;
           return Text("Full Name: ${data['full_name']} ${data['last_name']}");
         }
 

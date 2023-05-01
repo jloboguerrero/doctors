@@ -69,7 +69,8 @@ class DefaultFirebaseOptions {
     messagingSenderId: '497229873114',
     projectId: 'doctor-rent',
     storageBucket: 'doctor-rent.appspot.com',
-    iosClientId: '497229873114-ftq1mg7o7cv498ocofrfbnuqsjm91tcf.apps.googleusercontent.com',
+    iosClientId:
+        '497229873114-ftq1mg7o7cv498ocofrfbnuqsjm91tcf.apps.googleusercontent.com',
     iosBundleId: 'com.example.doctors',
   );
 }
