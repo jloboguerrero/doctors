@@ -8,12 +8,12 @@ class CustomInput extends StatelessWidget {
   final bool isPassword;
 
   const CustomInput({
-    Key? key,
+    super.key,
     required this.icon,
     required this.placeholder,
     required this.textController,
-    this.keyboardType = TextInputType.text,
-    this.isPassword = false,
+    required this.keyboardType,
+    required this.isPassword,
   });
 
   @override
@@ -33,16 +33,16 @@ class CustomInput extends StatelessWidget {
         ],
       ),
       child: TextField(
-        controller: this.textController,
+        controller: textController,
         textAlignVertical: TextAlignVertical.center,
         autocorrect: false,
-        keyboardType: this.keyboardType,
-        obscureText: this.isPassword,
+        keyboardType: keyboardType,
+        obscureText: isPassword,
         decoration: InputDecoration(
-            prefixIcon: Icon(this.icon),
+            prefixIcon: Icon(icon),
             focusedBorder: InputBorder.none,
             border: InputBorder.none,
-            hintText: this.placeholder),
+            hintText: placeholder),
       ),
     );
   }

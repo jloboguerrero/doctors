@@ -10,10 +10,11 @@ class Logo extends StatelessWidget {
       child: Column(
         children: const [
           Image(image: AssetImage('assets/chat-logo.jpg')),
+          SizedBox(height: 24.0),
           Text(
-            'Chat App',
+            'Doctor Rent',
             style: TextStyle(fontSize: 30),
-          )
+          ),
         ],
       ),
     );
